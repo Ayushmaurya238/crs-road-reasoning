@@ -1,0 +1,165 @@
+{
+ "error_weights": {
+  "counting_crossing": {
+   "dev_error": 0.167,
+   "n_dev_per_model": 6,
+   "sampling_weight": 0.811
+  },
+  "counting_generic": {
+   "dev_error": 0.03,
+   "n_dev_per_model": 11,
+   "sampling_weight": 0.5
+  },
+  "counting_per_direction": {
+   "dev_error": 0.212,
+   "n_dev_per_model": 11,
+   "sampling_weight": 0.909
+  },
+  "crossing_type": {
+   "dev_error": 0.061,
+   "n_dev_per_model": 11,
+   "sampling_weight": 0.5
+  },
+  "lane_direction": {
+   "dev_error": 0.1,
+   "n_dev_per_model": 10,
+   "sampling_weight": 0.519
+  },
+  "lane_type": {
+   "dev_error": 0.0,
+   "n_dev_per_model": 9,
+   "sampling_weight": 0.5
+  },
+  "line_color": {
+   "dev_error": 0.133,
+   "n_dev_per_model": 5,
+   "sampling_weight": 0.747
+  },
+  "line_marking": {
+   "dev_error": 0.067,
+   "n_dev_per_model": 5,
+   "sampling_weight": 0.586
+  },
+  "line_type": {
+   "dev_error": 0.4,
+   "n_dev_per_model": 5,
+   "sampling_weight": 1.398
+  },
+  "pairwise_lane_direction": {
+   "dev_error": 0.417,
+   "n_dev_per_model": 4,
+   "sampling_weight": 1.381
+  },
+  "pairwise_vehicle_location": {
+   "dev_error": 0.63,
+   "n_dev_per_model": 9,
+   "sampling_weight": 2.319
+  },
+  "sign_controls_lane": {
+   "dev_error": 1.0,
+   "n_dev_per_model": 1,
+   "sampling_weight": 1.537
+  },
+  "traffic_light_change": {
+   "dev_error": 0.056,
+   "n_dev_per_model": 6,
+   "sampling_weight": 0.509
+  },
+  "traffic_light_status": {
+   "dev_error": 0.278,
+   "n_dev_per_model": 6,
+   "sampling_weight": 1.112
+  },
+  "vehicle_position": {
+   "dev_error": 0.0,
+   "n_dev_per_model": 2,
+   "sampling_weight": 0.7
+  }
+ },
+ "weak_types_diagnostic": {
+  "pairwise_lane_direction": {
+   "models_below_0.65_on_both_splits": [
+    "p1",
+    "p2"
+   ],
+   "pooled_error": 0.641,
+   "n_total": 39
+  },
+  "pairwise_vehicle_location": {
+   "models_below_0.65_on_both_splits": [
+    "p1",
+    "p2",
+    "p3"
+   ],
+   "pooled_error": 0.648,
+   "n_total": 54
+  }
+ },
+ "pooled_dev_test_diagnostic": {
+  "counting_crossing": {
+   "pooled_error_dev_test": 0.214,
+   "n_total": 42
+  },
+  "counting_generic": {
+   "pooled_error_dev_test": 0.167,
+   "n_total": 66
+  },
+  "counting_per_direction": {
+   "pooled_error_dev_test": 0.242,
+   "n_total": 66
+  },
+  "crossing_type": {
+   "pooled_error_dev_test": 0.037,
+   "n_total": 54
+  },
+  "lane_direction": {
+   "pooled_error_dev_test": 0.095,
+   "n_total": 63
+  },
+  "lane_type": {
+   "pooled_error_dev_test": 0.05,
+   "n_total": 60
+  },
+  "line_color": {
+   "pooled_error_dev_test": 0.222,
+   "n_total": 36
+  },
+  "line_marking": {
+   "pooled_error_dev_test": 0.083,
+   "n_total": 36
+  },
+  "line_type": {
+   "pooled_error_dev_test": 0.25,
+   "n_total": 36
+  },
+  "pairwise_lane_direction": {
+   "pooled_error_dev_test": 0.641,
+   "n_total": 39
+  },
+  "pairwise_vehicle_location": {
+   "pooled_error_dev_test": 0.648,
+   "n_total": 54
+  },
+  "sign_controls_lane": {
+   "pooled_error_dev_test": 0.417,
+   "n_total": 12
+  },
+  "traffic_light_change": {
+   "pooled_error_dev_test": 0.182,
+   "n_total": 33
+  },
+  "traffic_light_status": {
+   "pooled_error_dev_test": 0.333,
+   "n_total": 33
+  },
+  "vehicle_position": {
+   "pooled_error_dev_test": 0.273,
+   "n_total": 33
+  },
+  "traffic_light_controls_lane": {
+   "pooled_error_dev_test": 0.0,
+   "n_total": 6
+  }
+ },
+ "rule": "sampling_weight from DEV error only (shrunk by n/(n+8), clipped to [0.5,3]); weak = below 0.65 on dev AND test in >=2 of p1,p2,p3 (diagnostic only)"
+}

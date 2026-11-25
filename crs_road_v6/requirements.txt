@@ -1,0 +1,10 @@
+torch
+torchvision
+transformers>=4.57
+peft
+pillow
+numpy
+pyyaml
+accelerate
+matplotlib
+ultralytics

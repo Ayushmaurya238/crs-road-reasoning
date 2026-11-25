@@ -1,0 +1,12 @@
+{
+ "dev": {
+  "n_common": 101,
+  "p1_only_right": 8,
+  "p2_only_right": 9
+ },
+ "test": {
+  "n_common": 122,
+  "p1_only_right": 10,
+  "p2_only_right": 15
+ }
+}

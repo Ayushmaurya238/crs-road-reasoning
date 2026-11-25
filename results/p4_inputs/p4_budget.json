@@ -1,0 +1,13 @@
+{
+ "S_original": 1638,
+ "stage_a_end": 246,
+ "stage_b_end_prefix_step": 1147,
+ "stage_c_len_original": 491,
+ "p4_extra_steps": 982,
+ "batch": 16,
+ "prefix_ckpt_step": 1147,
+ "p2_sec_per_step_stageC": 3.529,
+ "projected_hours_p2long_control": 0.96,
+ "projected_hours_p4": 1.11,
+ "note": "P4 cost assumed 1.15x P2 per step (longer prompt + graph-writing samples); the first P4 log lines show the real number"
+}

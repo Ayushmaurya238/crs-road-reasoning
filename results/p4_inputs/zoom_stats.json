@@ -1,0 +1,162 @@
+{
+ "p2_dev": {
+  "n": 101,
+  "hints": 0,
+  "small_acc": 0.7407407407407407,
+  "light": {
+   "n": 12,
+   "iou": 0.013,
+   "center_hit": 0.0
+  },
+  "line": {
+   "n": 15,
+   "iou": 0.023,
+   "center_hit": 0.0
+  },
+  "none": {
+   "n": 1,
+   "iou": 0.0,
+   "center_hit": 0.0
+  }
+ },
+ "p2_test": {
+  "n": 122,
+  "hints": 0,
+  "small_acc": 0.7741935483870968,
+  "light": {
+   "n": 10,
+   "iou": 0.023,
+   "center_hit": 0.0
+  },
+  "line": {
+   "n": 21,
+   "iou": 0.092,
+   "center_hit": 0.095
+  },
+  "none": {
+   "n": 7,
+   "iou": 0.085,
+   "center_hit": 0.143
+  }
+ },
+ "p3_dev": {
+  "n": 101,
+  "hints": 27,
+  "small_acc": 0.8518518518518519,
+  "light": {
+   "n": 12,
+   "iou": 0.359,
+   "center_hit": 0.5
+  },
+  "line": {
+   "n": 15,
+   "iou": 0.018,
+   "center_hit": 0.0
+  },
+  "none": {
+   "n": 1,
+   "iou": 0.0,
+   "center_hit": 0.0
+  }
+ },
+ "p3_test": {
+  "n": 122,
+  "hints": 31,
+  "small_acc": 0.8064516129032258,
+  "light": {
+   "n": 10,
+   "iou": 0.363,
+   "center_hit": 0.5
+  },
+  "line": {
+   "n": 21,
+   "iou": 0.078,
+   "center_hit": 0.048
+  },
+  "none": {
+   "n": 7,
+   "iou": 0.074,
+   "center_hit": 0.143
+  }
+ },
+ "p3_raw_dev": {
+  "n": 101,
+  "hints": 27,
+  "small_acc": 0.8518518518518519,
+  "light": {
+   "n": 12,
+   "iou": 0.013,
+   "center_hit": 0.0
+  },
+  "line": {
+   "n": 15,
+   "iou": 0.018,
+   "center_hit": 0.0
+  },
+  "none": {
+   "n": 1,
+   "iou": 0.0,
+   "center_hit": 0.0
+  }
+ },
+ "p3_raw_test": {
+  "n": 122,
+  "hints": 31,
+  "small_acc": 0.7741935483870968,
+  "light": {
+   "n": 10,
+   "iou": 0.007,
+   "center_hit": 0.0
+  },
+  "line": {
+   "n": 21,
+   "iou": 0.078,
+   "center_hit": 0.048
+  },
+  "none": {
+   "n": 7,
+   "iou": 0.074,
+   "center_hit": 0.143
+  }
+ },
+ "p3_oracle_dev": {
+  "n": 101,
+  "hints": 27,
+  "small_acc": 0.8518518518518519,
+  "light": {
+   "n": 12,
+   "iou": 0.013,
+   "center_hit": 0.0
+  },
+  "line": {
+   "n": 15,
+   "iou": 0.018,
+   "center_hit": 0.0
+  },
+  "none": {
+   "n": 1,
+   "iou": 0.0,
+   "center_hit": 0.0
+  }
+ },
+ "p3_oracle_test": {
+  "n": 122,
+  "hints": 31,
+  "small_acc": 0.8387096774193549,
+  "light": {
+   "n": 10,
+   "iou": 0.007,
+   "center_hit": 0.0
+  },
+  "line": {
+   "n": 21,
+   "iou": 0.078,
+   "center_hit": 0.048
+  },
+  "none": {
+   "n": 7,
+   "iou": 0.074,
+   "center_hit": 0.143
+  }
+ }
+}

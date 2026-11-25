@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.DS_Store
+._*
+venv/
+.venv/
+*.pt
+*.pth
+*.tar.gz
+*.zip
+av2_frames/
+custom_demo/
+scenes_live/

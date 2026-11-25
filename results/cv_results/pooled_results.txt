@@ -1,0 +1,58 @@
+folds found: ['0', '1', '2'] {'p0': 792, 'p1': 792, 'p2': 792, 'p3_raw': 792, 'p3_det': 792, 'p3_oracle': 792, 'p1_blank': 792}
+
+== Accuracy, pooled over all folds (test only, 95% log-bootstrap CI) ==
+model          n    acc           95% CI   paper  small   reasoning   per-fold
+p0           792  0.389  [0.350,0.428]   0.420  0.377(n252)  0.306(n124)  0.39 0.40 0.38
+p1           792  0.737  [0.699,0.776]   0.692  0.726(n252)  0.548(n124)  0.73 0.75 0.73
+p2           792  0.764  [0.718,0.809]     nan  0.706(n252)  0.726(n124)  0.78 0.76 0.75
+p3_raw       792  0.760  [0.714,0.806]     nan  0.710(n252)  0.685(n124)  0.78 0.76 0.73
+p3_det       792  0.761  [0.716,0.807]     nan  0.714(n252)  0.685(n124)  0.78 0.76 0.73
+p3_oracle    792  0.766  [0.719,0.814]     nan  0.730(n252)  0.685(n124)  0.78 0.77 0.75
+p1_blank     792  0.563  [0.524,0.605]   0.587  0.389(n252)  0.500(n124)  0.59 0.54 0.54
+
+== Paired differences (pp), CI over logs, W/L = questions A right & B wrong / reverse ==
+p1        -p0        all       +34.8pp CI[+30.1,+40.0] W325 L49 p=0.000 n=792
+p1        -p0        small     +34.9pp CI[+26.4,+43.3] W96 L8 p=0.000 n=252
+p1        -p0        reasoning +24.2pp CI[ +8.8,+37.4] W45 L15 p=0.000 n=124
+p1        -p1_blank  all       +17.4pp CI[+11.8,+22.5] W209 L71 p=0.000 n=792
+p1        -p1_blank  small     +33.7pp CI[+19.6,+47.2] W116 L31 p=0.000 n=252
+p1        -p1_blank  reasoning  +4.8pp CI[ -6.5,+15.7] W24 L18 p=0.441 n=124
+p2        -p1        all        +2.7pp CI[ -0.5, +5.7] W70 L49 p=0.066 n=792
+p2        -p1        small      -2.0pp CI[ -6.9, +2.8] W17 L22 p=0.522 n=252
+p2        -p1        reasoning +17.7pp CI[ +8.8,+27.0] W30 L8 p=0.000 n=124
+p3_det    -p1        all        +2.4pp CI[ -0.7, +5.5] W68 L49 p=0.096 n=792
+p3_det    -p1        small      -1.2pp CI[ -5.5, +3.2] W17 L20 p=0.743 n=252
+p3_det    -p1        reasoning +13.7pp CI[ +3.8,+23.9] W27 L10 p=0.008 n=124
+p3_det    -p2        all        -0.3pp CI[ -1.6, +1.0] W16 L18 p=0.864 n=792
+p3_det    -p2        small      +0.8pp CI[ -1.6, +3.3] W9 L7 p=0.804 n=252
+p3_det    -p2        reasoning  -4.0pp CI[-10.2, +1.6] W3 L8 p=0.227 n=124
+p3_raw    -p2        all        -0.4pp CI[ -1.8, +1.0] W16 L19 p=0.736 n=792
+p3_raw    -p2        small      +0.4pp CI[ -2.0, +3.0] W9 L8 p=1.000 n=252
+p3_raw    -p2        reasoning  -4.0pp CI[-10.2, +1.6] W3 L8 p=0.227 n=124
+p3_oracle -p3_det    all        +0.5pp CI[ -0.2, +1.5] W5 L1 p=0.219 n=792
+p3_oracle -p3_det    small      +1.6pp CI[ -0.7, +4.7] W5 L1 p=0.219 n=252
+p3_oracle -p3_det    reasoning  +0.0pp CI[ +0.0, +0.0] W0 L0 p=1.000 n=124
+
+== Per template (accuracy) ==
+template                     n       p0     p1     p2 p3_det
+counting_crossing             33   0.15   0.88   0.82   0.79
+counting_generic              88   0.50   0.88   0.84   0.84
+counting_per_direction        44   0.39   0.80   0.80   0.80
+crossing_type                 48   0.40   1.00   1.00   1.00
+lane_direction                73   0.36   0.74   0.75   0.74
+lane_type                     76   0.66   0.95   0.95   0.96
+line_color                    62   0.40   0.73   0.68   0.65
+line_marking                  62   0.29   0.69   0.71   0.74
+line_type                     64   0.31   0.67   0.67   0.69
+pairwise_lane_direction       54   0.26   0.33   0.48   0.52
+pairwise_vehicle_location     64   0.36   0.45   0.64   0.55
+sign_controls_lane            12   0.17   0.75   0.83   0.83
+traffic_light_change          30   0.40   0.87   0.80   0.80
+traffic_light_controls_lane    4   0.25   1.00   1.00   0.75
+traffic_light_status          34   0.59   0.76   0.74   0.76
+vehicle_position              44   0.27   0.59   0.80   0.84
+
+== Zoom slice (questions that received a zoom hint) ==
+n hinted 252 {'p1': 0.726, 'p2': 0.706, 'p3_det': 0.714, 'p3_oracle': 0.73}
+
+Paper reference (Table, 4B model): zero-shot 0.420, fine-tuned 0.692, blank-image fine-tuned 0.587. Your question set differs, so treat as a sanity range only.

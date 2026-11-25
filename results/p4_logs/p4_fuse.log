@@ -1,0 +1,13 @@
+w            dev      test  test_big
+0.0        0.743     0.648     0.717
+0.25       0.743     0.672     0.723
+0.5        0.772     0.689     0.739
+0.75       0.772     0.730     0.749
+1.0        0.772     0.721     0.737
+
+chosen on dev: w=0.5 (dev 0.772).  At that w: TEST=0.689  TEST_BIG=0.739
+dev: fused 0.772  95% CI [0.696, 0.853]  n=101
+test: fused 0.689  95% CI [0.580, 0.786]  n=122
+test paired vs p2: n=122 p4_fused only right=5 p2 only right=11 McNemar p=0.210
+test_big: fused 0.739  95% CI [0.674, 0.794]  n=494
+test_big paired vs p2: n=494 p4_fused only right=17 p2 only right=32 McNemar p=0.044

@@ -1,0 +1,2 @@
+--model Qwen/Qwen3-VL-2B-Instruct --dtype bf16 --img_side 448 --lora_r 16 --cnn_arch resnet50
+--batch 16 --val_n 60 --eval_every 273
