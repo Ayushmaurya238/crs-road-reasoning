@@ -1,4 +1,4 @@
-
+﻿
 # Graph-Grounded Visual Reasoning for Autonomous Road Understanding (CRS: P0–P4)
 
 **IIT Roorkee · Department of Data Science and Artificial Intelligence · Deep Learning Project**
@@ -100,7 +100,7 @@ crs-road-reasoning/
 │   ├── tables.tex                # LaTeX results tables
 │   └── figures/                  # All 10 evaluation & diagnostic figures (fig1–fig10)
 ├── overlays/                     # Projected GT & YOLO11n camera overlay samples (.jpg)
-└── docs/                         # Final presentation deck (.pptx / .pdf)
+└── docs/                         # Final presentation deck (.pptx)
 ```
 
 ---
@@ -127,7 +127,7 @@ python demo_infer.py \
 ```
 
 ### 3. Live GPU Inference (`P0`–`P3` with Trained Weights)
-1. Download the lightweight inference checkpoint (`p3_infer.pt` / `p2_infer.pt`) from this repository's **[GitHub Releases](../../releases)** page.
+1. Download the lightweight inference checkpoint (`p3_infer.pt`) from this repository's **[GitHub Releases](../../releases)** page.
 2. Fetch Argoverse 2 frames for a test log:
    ```bash
    python crs_road_v6/fetch_av2_frames.py --log 098fe60e-bab0-32e2-89bc-bedced881911 --out av2_frames
@@ -162,3 +162,4 @@ python demo_infer.py \
 | **Suryansh Rathore** | VLM Backbone, Grounding & Curriculum (`P1`–`P2`) | Fine-tuned Qwen3-VL-2B with LoRA ($r=16$), LM + option-ranking loss (`P1`), continuous MLP `BoxHead` (`P2`), 3-stage training curriculum (Stages A/B/C), error-weighted sampling, and `P2-long` compute control. |
 | **Sahil Kaler** | Evaluation, Controls & Statistical Testing | Built the zero-leakage evaluation suite: 3-fold log-level CV ($N=792$), 494-question `test_big` split, 4-way TTA, blank-image visual grounding control, log-clustered bootstrap CIs, exact McNemar tests, and result plots. |
 | **Ayush Maurya** | Data Prep, Literature & Demo Delivery | Downloaded and organized the 80 Argoverse 2 / OpenLane-V2 / MAPVQA logs, verified 50/15/15 splits, mapped CRS reference baselines, and prepared the inference demo video, overlays, GitHub repository (`README.md`), and final presentation. |
+
