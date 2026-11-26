@@ -1,0 +1,171 @@
+{
+ "train": {
+  "n": 9040,
+  "logs": 52,
+  "boxed": 2742,
+  "zoom_light": 555,
+  "zoom_line": 1694,
+  "templates": {
+   "counting_crossing": 961,
+   "crossing_type": 549,
+   "traffic_light_change": 317,
+   "line_color": 606,
+   "vehicle_position": 645,
+   "lane_direction": 795,
+   "pairwise_vehicle_location": 627,
+   "line_marking": 624,
+   "counting_per_direction": 615,
+   "lane_type": 987,
+   "sign_controls_lane": 188,
+   "line_type": 623,
+   "traffic_light_status": 238,
+   "pairwise_lane_direction": 615,
+   "traffic_light_controls_lane": 41,
+   "counting_generic": 609
+  },
+  "letters": {
+   "A": 2260,
+   "B": 2260,
+   "C": 2260,
+   "D": 2260
+  }
+ },
+ "dev": {
+  "n": 69,
+  "logs": 7,
+  "boxed": 23,
+  "zoom_light": 0,
+  "zoom_line": 22,
+  "templates": {
+   "counting_per_direction": 5,
+   "line_marking": 7,
+   "counting_generic": 10,
+   "line_type": 8,
+   "lane_type": 8,
+   "lane_direction": 8,
+   "counting_crossing": 3,
+   "pairwise_lane_direction": 4,
+   "pairwise_vehicle_location": 4,
+   "crossing_type": 2,
+   "line_color": 7,
+   "vehicle_position": 3
+  },
+  "letters": {
+   "A": 18,
+   "B": 17,
+   "C": 17,
+   "D": 17
+  }
+ },
+ "test": {
+  "n": 257,
+  "logs": 20,
+  "boxed": 82,
+  "zoom_light": 24,
+  "zoom_line": 42,
+  "templates": {
+   "traffic_light_change": 11,
+   "counting_crossing": 14,
+   "crossing_type": 19,
+   "pairwise_lane_direction": 14,
+   "line_marking": 17,
+   "line_type": 17,
+   "line_color": 17,
+   "lane_direction": 22,
+   "counting_generic": 30,
+   "lane_type": 24,
+   "counting_per_direction": 15,
+   "pairwise_vehicle_location": 22,
+   "traffic_light_status": 13,
+   "vehicle_position": 15,
+   "sign_controls_lane": 5,
+   "traffic_light_controls_lane": 2
+  },
+  "letters": {
+   "A": 65,
+   "B": 64,
+   "C": 64,
+   "D": 64
+  }
+ }
+}
+log 00a6ffc1 split=train questions=300 frames_missing_images=0 meta=1
+log 022af476 split=dev questions=11 frames_missing_images=0 meta=1
+log 0322b098 split=test questions=19 frames_missing_images=0 meta=1
+log 03fba633 split=train questions=89 frames_missing_images=0 meta=1
+log 04973bcf split=train questions=295 frames_missing_images=0 meta=1
+log 05853f69 split=test questions=18 frames_missing_images=0 meta=1
+log 05fb81ab split=train questions=56 frames_missing_images=0 meta=1
+log 067b1c50 split=test questions=5 frames_missing_images=0 meta=1
+log 06852209 split=train questions=201 frames_missing_images=0 meta=1
+log 072c8e90 split=train questions=68 frames_missing_images=0 meta=1
+log 074d2237 split=dev questions=15 frames_missing_images=0 meta=1
+log 07e4fccb split=train questions=64 frames_missing_images=0 meta=1
+log 080b1ce2 split=train questions=81 frames_missing_images=0 meta=1
+log 087695bd split=test questions=7 frames_missing_images=0 meta=1
+log 087fec73 split=train questions=213 frames_missing_images=0 meta=1
+log 08bcc06e split=test questions=20 frames_missing_images=0 meta=1
+log 098fe60e split=train questions=300 frames_missing_images=0 meta=1
+log 0a524e66 split=train questions=101 frames_missing_images=0 meta=1
+log 0b1b993a split=train questions=115 frames_missing_images=0 meta=1
+log 0b324587 split=train questions=212 frames_missing_images=0 meta=1
+log 0c143226 split=train questions=138 frames_missing_images=1 meta=1
+log 0c61aea3 split=train questions=208 frames_missing_images=0 meta=1
+log 0d37aee4 split=train questions=300 frames_missing_images=0 meta=1
+log 0d9e4cff split=train questions=300 frames_missing_images=0 meta=1
+log 0f257dcc split=train questions=300 frames_missing_images=0 meta=1
+log 106d962b split=train questions=250 frames_missing_images=0 meta=1
+log 108d2060 split=train questions=154 frames_missing_images=0 meta=1
+log 118a1e87 split=test questions=18 frames_missing_images=0 meta=1
+log 12071817 split=train questions=300 frames_missing_images=0 meta=1
+log 121007f3 split=test questions=23 frames_missing_images=0 meta=1
+log 12c3c14b split=test questions=8 frames_missing_images=0 meta=1
+log 13209193 split=test questions=15 frames_missing_images=0 meta=1
+log 133e2e0b split=train questions=133 frames_missing_images=0 meta=1
+log 134bb8e9 split=train questions=101 frames_missing_images=0 meta=1
+log 14c8d182 split=test questions=12 frames_missing_images=0 meta=1
+log 14f5485e split=train questions=119 frames_missing_images=0 meta=1
+log 18bdf01b split=train questions=73 frames_missing_images=0 meta=1
+log 1992ed13 split=train questions=76 frames_missing_images=0 meta=1
+log 1a10b0e6 split=train questions=129 frames_missing_images=0 meta=1
+log 1a4e2d86 split=train questions=110 frames_missing_images=0 meta=1
+log 1a6487dd split=train questions=80 frames_missing_images=0 meta=1
+log 1a7e18b5 split=test questions=6 frames_missing_images=0 meta=1
+log 1b8fc962 split=dev questions=3 frames_missing_images=0 meta=1
+log 1bf2bf1c split=train questions=53 frames_missing_images=0 meta=1
+log 1c7d3b85 split=test questions=16 frames_missing_images=0 meta=1
+log 1d950a38 split=train questions=128 frames_missing_images=0 meta=1
+log 20f785b0 split=test questions=8 frames_missing_images=0 meta=1
+log 21f6ebe1 split=train questions=86 frames_missing_images=0 meta=1
+log 226199ab split=train questions=300 frames_missing_images=0 meta=1
+log 23808d42 split=train questions=201 frames_missing_images=0 meta=1
+log 247f91e7 split=train questions=32 frames_missing_images=0 meta=1
+log 256c185c split=test questions=16 frames_missing_images=0 meta=1
+log 2583a8ee split=train questions=300 frames_missing_images=0 meta=1
+log 26daba71 split=train questions=78 frames_missing_images=0 meta=1
+log 27fba275 split=train questions=300 frames_missing_images=0 meta=1
+log 285dcef7 split=dev questions=5 frames_missing_images=0 meta=1
+log 286790ed split=train questions=300 frames_missing_images=0 meta=1
+log 2b044433 split=test questions=4 frames_missing_images=0 meta=1
+log 2fff4135 split=train questions=148 frames_missing_images=0 meta=1
+log 3153b5b3 split=test questions=15 frames_missing_images=0 meta=1
+log 34fe8fbd split=train questions=300 frames_missing_images=0 meta=1
+log 37fcd8ac split=train questions=225 frames_missing_images=0 meta=1
+log 382cf8af split=train questions=300 frames_missing_images=0 meta=1
+log 3933d1a2 split=dev questions=16 frames_missing_images=0 meta=1
+log 3a1b3424 split=train questions=300 frames_missing_images=0 meta=1
+log 3b2994cb split=train questions=300 frames_missing_images=0 meta=1
+log 3b60751b split=train questions=300 frames_missing_images=0 meta=1
+log 3b68c074 split=test questions=19 frames_missing_images=0 meta=1
+log 3c51357e split=dev questions=14 frames_missing_images=0 meta=1
+log 3ca11a5e split=test questions=19 frames_missing_images=0 meta=1
+log 3dd173a6 split=train questions=181 frames_missing_images=0 meta=1
+log 41e31361 split=train questions=100 frames_missing_images=0 meta=1
+log 4207ef92 split=train questions=16 frames_missing_images=0 meta=1
+log 444cce44 split=train questions=33 frames_missing_images=0 meta=1
+log 46d917cd split=train questions=74 frames_missing_images=0 meta=1
+log 4766da89 split=dev questions=0 frames_missing_images=0 meta=1
+log 47972731 split=test questions=6 frames_missing_images=0 meta=1
+log 490f13c4 split=test questions=3 frames_missing_images=0 meta=1
+log 4977e8a8 split=dev questions=5 frames_missing_images=0 meta=1
+log 49a9df80 split=train questions=119 frames_missing_images=0 meta=1
